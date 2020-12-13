@@ -1,6 +1,5 @@
 <template>
     <div class="nav-bar">
-        <h1>NAVBAR</h1>
         <ul>
             <li class="category" v-for="category in categories" :key="category.id">
                 <h2 class="category-name">{{ category.name }}</h2>
