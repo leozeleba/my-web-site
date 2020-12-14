@@ -1,10 +1,23 @@
 <template>
     <div class="nav-bar">
-        <ul>
-            <li class="category" v-for="category in categories" :key="category.id">
-                <h2 class="category-name">{{ category.name }}</h2>
-            </li>
-        </ul>
+        <div class="row" @click="navBarOpen = !navBarOpen">
+            <font-awesome-icon v-if="navBarOpen" icon="angle-left" class="navbar-toggle toggle-open right"/>
+            <font-awesome-icon v-else icon="angle-right" class="navbar-toggle center"/>
+        </div>
+        <div class="row">
+            <ul class="categories">
+                <li class="category" v-for="category in categories" :key="category.id">
+                    <div class="col-icon">
+                        <font-awesome-icon :icon="category.fa" class="category-icon"/>
+                    </div>
+                    <div v-show="navBarOpen">
+                        <p class="category-name col">
+                            {{ category.name }}
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -12,52 +25,54 @@
 
 
 export default {
+    
     name: 'NavBar',
     data(){
         return{
+            navBarOpen: true,
             categories:[
 
                 {
                     id: 1,
                     name: "Profile",
                     link: "/profile",
-                    svg: ""  
+                    fa: "user"  
                 },
                 {
                     id: 2,
                     name: "Formations",
                     link: "/courses",
-                    svg: ""  
+                    fa: "user-graduate"  
                 },
                 {
                     id: 3,
                     name: "Experiences",
                     link: "/experiences",
-                    svg: ""  
+                    fa: "user-tie"  
                 },
                 {
                     id: 4,
                     name: "Compétences",
                     link: "/skills",
-                    svg: ""  
+                    fa: "laptop-code"  
                 },
                 {
                     id: 5,
                     name: "Portfolio",
                     link: "/portfolio",
-                    svg: ""  
+                    fa: "coffee"  
                 },
                 {
                     id: 6,
                     name: "Hobbies",
                     link: "/hobbies",
-                    svg: ""  
+                    fa: "guitar"  
                 },
                 {
                     id: 7,
                     name: "Contact",
                     link: "/contact",
-                    svg: ""  
+                    fa: "at"  
                 }
                 
             ]
@@ -69,24 +84,84 @@ export default {
 
 <style lang="scss" scoped>
 
-    .nav-bar{
-        background-color: rgb(255, 255, 255);
-        border-right: grey solid 2px;
-        width: 23%;
-    }
+.row{
+    display: block ruby;
+    flex-direction: row;
+}
 
-    .nav-bar > ul{
-        list-style-type: none;
-        
-    }
+.right{
+    position: 0 20px;
+    float: right;   
+}
 
-    .category{
-        margin: 20px 0px;
-    }
+.center{
+    padding: 0;
+    position: 0 auto;
+    width: 100%
+}
 
-    .category-name{
-        text-transform: uppercase;
-    }
+.navbar-toggle{ 
+    margin-top: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #dfdfdf;
+}
 
+.toggle-open{
+    margin: 5px 20px 0px 0px
+}
+
+.nav-bar{
+    border-right: #910000 solid 2px;
+    width: min-content;
+    background-color: #1c1c1c;
+}
+
+
+.categories{
+    list-style-type: none;
+    display: inline-block;
+    margin:0;
+}
+
+.category{
+    white-space: nowrap;
+    display: block ruby;
+    padding-right: 30px;
+    padding: 15px 30px 25px 0;
+    cursor: pointer;
+    color:#b7b7b7;
+}
+
+
+.category-name{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 25px;
+    height:25px
+}
+
+.category:hover{
+    color: white
+    ;
+}
+
+.navbar-toggle:hover{
+    color: white
+    ;
+}
+
+.category-icon{
+    margin: 0;
+}
+
+
+.col-icon{
+    width: 0px;
+    margin-right: 40px;
+    height:25px;
+    font-size: 25px;
+}
 
 </style>
