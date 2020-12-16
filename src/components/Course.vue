@@ -12,7 +12,7 @@
         <div class="course-description">
             <div>
                 {{course.name}}
-            </div>
+            </div> 
             <p>{{course.description}}</p>
         </div>
     </div>
