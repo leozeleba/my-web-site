@@ -10,9 +10,9 @@
 
 <script>
 
-import logo_ganacos from "@/assets/logo_ganacos.png"
-import logo_progidys from "@/assets/logo_progidys.png"
-import logo_etib from "@/assets/logo_etib.png"
+import logo_iut_limoges from "@/assets/logo_iut_limoges.png"
+import logo_iut_vannes from "@/assets/logo_iut_vannes.png"
+import logo_42 from "@/assets/logo_42.png"
 import Course from './Course.vue'
 
 export default {
@@ -28,36 +28,31 @@ export default {
             coursesList: [
                 {
                     id: 1,
-                    company: "",
-                    role: "Développeur full-stack",
-                    start: "14/10/1999",
-                    end: "",
-                    description: "Ganacos est une nouvelle entreprise qui développe une application web pour la planification d’une entreprise. Ce fut pour moi une expérience gratifiante de part, les responsabilités que l’on m’avait confiées et, le challenge technique que représente l’application Ganacos.",
-                    logo: logo_ganacos,
+                    name: "Licence professionnelle de développement d’application web à l’université de Limoges",
+                    start: "09/2019",
+                    end: "06/2020",
+                    description: "Cette formation m’a permis de continuer l’apprentissage et, de consolider mes compétences dans le métier de développeur informatique.",
+                    logo: logo_iut_limoges,
                     logoWidth: "150px",
-                    website: "https://ganacos.com/"
                 },
                 {
                     id: 2,
-                    company: "",
-                    role: "Chef de projet junior",
-                    start: "09/2019",
-                    end: "06/2020",
-                    description: "Progidys est une PME dans l’édition d’ERP. Étant donné le petit nombre d’employés, j’ai dû faire preuve d’une grande autonomie et j’ai aimé avoir l’opportunité de toujours proposer de nouvelles idées, façon de développer, pour répondre au mieux au besoin d’un client et améliorer l’expérience utilisateur.",
-                    logo: logo_progidys,
+                    name: "Diplôme universitaire d’Informatique à l’université de Vannes",
+                    start: "09/2017",
+                    end: "06/2019",
+                    description: "Lors de ces deux années de formation universitaire j’ai découvert le développement informatique, et le monde de l’entreprise lors de ma deuxième année en apprentissage.",
+                    logo: logo_iut_vannes,
                     logoWidth: "150px",
-                    website: "https://www.progidys.fr/"
                 },
                 {
                     id: 3,
-                    company: "",
+                    name: "",
                     role: "Développeur logiciel",
-                    start: "12/2018",
-                    end: "08/2019",
-                    description: "L’entreprise ETIB c’est spécialisé dans l’édition de logiciels à destination des professionnels du transport et du transport médical (taxi, ambulance, taxis conventionnés…). J’ai appris à réaliser un projet de façon méthodique pour toujours trouver la meilleure façon de résoudre un ou plusieurs problèmes.",
-                    logo: logo_etib,
+                    start: "03/07/2017",
+                    end: "30/07/2017",
+                    description: "Lors de ces deux années de formation universitaire j’ai découvert le développement informatique, et le monde de l’entreprise lors de ma deuxième année en apprentissage.",
+                    logo: logo_42,
                     logoWidth: "100px",
-                    website: "http://www.etib.fr/FR/"
                 }
             ]
         }

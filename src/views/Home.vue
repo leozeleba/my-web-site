@@ -6,6 +6,7 @@
     </div>
     <div>
       <Profil class="profil-element" />
+      <Experiences/>
       <Courses/>
     </div>
     
@@ -16,6 +17,7 @@
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue'
 import Profil from '@/components/Profil.vue'
+import Experiences from '@/components/Experiences'
 import Courses from '@/components/Courses'
 
 export default {
@@ -23,6 +25,7 @@ export default {
   components: {
     NavBar,
     Profil,
+    Experiences,
     Courses
   }
 }

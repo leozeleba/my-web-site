@@ -1,19 +1,18 @@
 <template>
     <div class="course">
         <div class="course-header">                        
-            <img :href="course.website" class="course-logo" :src="course.logo" :style="styleLogo(course)" alt="">
+            <img class="course-logo" :src="course.logo" :style="styleLogo(course)" alt="">
             <p>{{course.company}}</p> <!-- if not on logo will be != '' -->
-            <div>
-                {{course.role}}
-            </div>
             <br>
             <div>
                 {{period(course)}}
             </div>
             <br><br>
-            <a :href="course.website" target="_blank" rel="noopener noreferrer">Visiter le site internet ></a>
         </div>
         <div class="course-description">
+            <div>
+                {{course.name}}
+            </div>
             <p>{{course.description}}</p>
         </div>
     </div>
