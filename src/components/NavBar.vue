@@ -112,16 +112,15 @@ export default {
 }
 
 .nav-bar{
-    border-right: #910000 solid 2px;
     width: min-content;
     background-color: #1c1c1c;
 }
 
 
 .categories{
-    list-style-type: none;
     display: inline-block;
     margin:0;
+    margin-left: 40px
 }
 
 .category{

@@ -48,19 +48,19 @@ export default {
 .profil{
     display: flex;
     align-items: center;
-    background-color: #bbb;;
+    background-color: #bbb;
 }
 
 .main-image{
     width: 200px;
     border-radius: 50% ;
     border: solid 2px black;
-    margin: 15vh 40px
+    margin: 100px 40px
 }
 
 .main-text{
     text-align: justify;
-    margin: 0 auto;
+    margin: 0 40px 0 0;
 
 }
 

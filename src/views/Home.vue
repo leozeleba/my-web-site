@@ -35,11 +35,15 @@ export default {
 }
 
 .nav-bar{
+  z-index: 10;
 }
 .nav-bar-element{
   height:100%
 }
 
 .profil-element{
+  height: 400px;
+  box-shadow: 6px 5px 5px #737373;
+
 }
 </style>
