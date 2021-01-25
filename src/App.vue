@@ -11,8 +11,9 @@
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   overflow: hidden;
+  font: "Roboto";
 }
-
+* { margin: 0 ; }
 ul{
   padding:0
 }

@@ -2,7 +2,7 @@
     <div class="experience">
         <div class="experience-header">                        
             <img class="experience-logo" :src="experience.logo" :style="styleLogo(experience)" alt="">
-            <p>{{experience.company}}</p> <!-- if not on logo will be != '' -->
+            <p>{{experience.company}}</p> 
             <div>
                 {{experience.role}}
             </div>
@@ -16,10 +16,14 @@
         <div class="experience-description">
             <p>{{experience.description}}</p>
         </div>
+        <div class="map">
+            <Map :map="experience.map"/>
+        </div>
     </div>
 </template>
 
 <script>
+import Map from './Map.vue'
 export default {
     name: 'Exeperience',
     props: {
@@ -37,6 +41,9 @@ export default {
             return "width: " + experience.logoWidth
         }
     },
+    components:{
+        Map
+    }
 
 }
 </script>
@@ -49,20 +56,20 @@ export default {
 }
 
 .experience-description{
-    width: 40em;
+    width: 25em;
     text-align: justify;
-    margin: auto 40px;
+    margin: 6em 2.5em;
 ;
 }
 
 .experience-logo{
     width: 150px;
+    
 }
 
 .experience-header{
-    margin-left: 40px;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    margin: auto 2em
+
 }
 
 a{
@@ -70,6 +77,12 @@ a{
     color: black;
 }
 
-.link{
+.map{
+    margin: 4em 0em 4em 6em;
+
+    width: 500px;
+    border-radius: 5%;
+    overflow: hidden;
 }
+
 </style>

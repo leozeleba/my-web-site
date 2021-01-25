@@ -67,9 +67,6 @@ export default {
     background-color: white;
 }
 
-.couse-list{
-}
-
 .course-element{
     display: flex;
     background-color: #bbb;

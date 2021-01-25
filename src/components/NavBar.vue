@@ -6,7 +6,7 @@
         </div>
         <div class="row">
             <ul class="categories">
-                <li class="category" v-for="category in categories" :key="category.id">
+                <li @click="scrollTo(category.link)" class="category" v-for="category in categories" :key="category.id">
                     <div class="col-icon">
                         <font-awesome-icon :icon="category.fa" class="category-icon"/>
                     </div>
@@ -29,53 +29,58 @@ export default {
     name: 'NavBar',
     data(){
         return{
-            navBarOpen: true,
+            navBarOpen: false,
             categories:[
 
                 {
                     id: 1,
                     name: "Profile",
-                    link: "/profile",
-                    fa: "user"  
-                },
-                {
-                    id: 2,
-                    name: "Formations",
-                    link: "/courses",
-                    fa: "user-graduate"  
+                    link: "profile",
+                    fa: ["fas","user"]  
                 },
                 {
                     id: 3,
                     name: "Experiences",
-                    link: "/experiences",
-                    fa: "user-tie"  
+                    link: "experiences",
+                    fa: ["fas","user-tie"]  
+                },
+                {
+                    id: 2,
+                    name: "Formations",
+                    link: "courses",
+                    fa: ["fas","user-graduate"]  
                 },
                 {
                     id: 4,
                     name: "Compétences",
-                    link: "/skills",
-                    fa: "laptop-code"  
+                    link: "skills",
+                    fa: ["fas","laptop-code"]  
                 },
                 {
                     id: 5,
                     name: "Portfolio",
-                    link: "/portfolio",
-                    fa: "coffee"  
+                    link: "portfolio",
+                    fa: ["fas","coffee"]  
                 },
                 {
                     id: 6,
                     name: "Hobbies",
-                    link: "/hobbies",
-                    fa: "guitar"  
+                    link: "hobbies",
+                    fa: ["fas","guitar"]  
                 },
                 {
                     id: 7,
                     name: "Contact",
-                    link: "/contact",
-                    fa: "at"  
+                    link: "contact",
+                    fa: ["fas","at"]  
                 }
                 
             ]
+        }
+    },
+    methods:{
+        scrollTo(id){
+            document.getElementById(id).scrollIntoView();
         }
     }
 
@@ -112,8 +117,8 @@ export default {
 }
 
 .nav-bar{
-    width: min-content;
     background-color: #1c1c1c;
+    position: fixed
 }
 
 
