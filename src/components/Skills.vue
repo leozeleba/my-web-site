@@ -13,6 +13,8 @@ import Skill from './Skill'
 import windevImage from "@/assets/windev-logo.png"
 import mysqlImage from "@/assets/mysql-logo.png"
 import leafletImage from "@/assets/leaflet-logo.png"
+import htImage from "@/assets/handsontable_logo.png"
+import mdbImage from "@/assets/mongodb.png"
 
 export default {
     name:'Skills',
@@ -124,6 +126,22 @@ export default {
                     iconSize: "1x",
                     img: leafletImage,
                     style: "padding-bottom: 20px;margin-top: -46px;"
+                },
+                {
+                    id: 14,
+                    label: "Handsontable",
+                    fa: null,
+                    iconSize: "1x",
+                    img: htImage,
+                    style: "padding-bottom: 20px; width:100px"
+                },
+                {
+                    id: 15,
+                    label: "MongoDB",
+                    fa: null,
+                    iconSize: "1x",
+                    img: mdbImage,
+                    style: "padding-bottom: 20px; width:100px"
                 }
             ]
         }

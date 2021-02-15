@@ -16,6 +16,8 @@
         <Courses id="courses"/>
         <br>
         <Skills id="skills" class="skills-element"/>
+        <br>
+        <Portfolio id="portfolio" class="portfolio-element" />
       </div>
     </body>
   </div>
@@ -25,9 +27,10 @@
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue'
 import Profil from '@/components/Profil.vue'
-import Experiences from '@/components/Experiences'
-import Courses from '@/components/Courses'
-import Skills from '@/components/Skills'
+import Experiences from '@/components/Experiences.vue'
+import Courses from '@/components/Courses.vue'
+import Skills from '@/components/Skills.vue'
+import Portfolio from '@/components/Portfolio.vue'
 
 export default {
   name: 'Home',
@@ -36,7 +39,8 @@ export default {
     Profil,
     Experiences,
     Courses,
-    Skills
+    Skills,
+    Portfolio
   }
 }
 </script>
@@ -73,4 +77,9 @@ export default {
   text-align: center;
   padding-top: 0.8em;
 }
+
+.portfolio-element{
+  margin-top: 5em;
+}
+
 </style>

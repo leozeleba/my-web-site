@@ -21,5 +21,14 @@ li{
   list-style-type: none;
 }
 
+.row{
+  display: flex;
+}
+
+video{
+    max-width: 700px;
+    align-self: auto;
+}
+
 </style>
 

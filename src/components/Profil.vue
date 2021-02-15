@@ -1,6 +1,7 @@
 <template>
     <div class="profil">
         <div class="col-img">
+            <a href="/about">about</a>
             <img :src="mainImg" alt="" class="main-image">
         </div>
         <div class="col-text">

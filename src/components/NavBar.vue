@@ -34,8 +34,8 @@ export default {
 
                 {
                     id: 1,
-                    name: "Profile",
-                    link: "profile",
+                    name: "Profil",
+                    link: "profil",
                     fa: ["fas","user"]  
                 },
                 {
@@ -90,7 +90,7 @@ export default {
 <style lang="scss" scoped>
 
 .row{
-    display: block ruby;
+    display: flex;
     flex-direction: row;
 }
 
@@ -113,12 +113,14 @@ export default {
 }
 
 .toggle-open{
-    margin: 5px 20px 0px 0px
+    margin: 5px 20px 0px 0px;
+    padding-left: 9em;
 }
 
 .nav-bar{
     background-color: #1c1c1c;
-    position: fixed
+    position: fixed;
+    width: min-content;
 }
 
 
@@ -130,7 +132,7 @@ export default {
 
 .category{
     white-space: nowrap;
-    display: block ruby;
+    display: flex;
     padding-right: 30px;
     padding: 15px 30px 25px 0;
     cursor: pointer;
