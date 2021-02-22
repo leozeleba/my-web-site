@@ -20,6 +20,9 @@
         <Portfolio id="portfolio" class="portfolio-element" />
       </div>
     </body>
+    <footer>
+      <Contact id="contact"/>
+    </footer>
   </div>
 </template>
 
@@ -31,6 +34,7 @@ import Experiences from '@/components/Experiences.vue'
 import Courses from '@/components/Courses.vue'
 import Skills from '@/components/Skills.vue'
 import Portfolio from '@/components/Portfolio.vue'
+import Contact from '@/components/Contact.vue'
 
 export default {
   name: 'Home',
@@ -40,7 +44,8 @@ export default {
     Experiences,
     Courses,
     Skills,
-    Portfolio
+    Portfolio,
+    Contact
   }
 }
 </script>
@@ -53,6 +58,7 @@ export default {
 
 .nav-bar{
   z-index: 10;
+
 }
 .nav-bar-element{
   height:100%

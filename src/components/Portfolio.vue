@@ -32,6 +32,9 @@ import TraceurImg from "@/assets/geolocalisation.gif"
 import DemoSyncMP4 from "@/assets/Demo-SyncFichiers.mp4"
 import DemoCalculItineraireMP4 from "@/assets/Demo-CalculItineraire.mp4"
 import ArkanoidImg from "@/assets/Arkanoid.png"
+import ArcanorImg from "@/assets/arcanor.jpg"
+import CdCImg from "@/assets/Cliqueduclique.jpg"
+import LinEpicerie from "@/assets/linepicerie.png"
 export default {
     name:'Portfolio',
     components:{
@@ -182,9 +185,9 @@ export default {
                                 "Le but de l'application était de permettre à l'épicier de scanner plusieurs produits, puis de faire une liste des produits scanner, pour finnalement générer des factures, devis, bon de commandes au format pdf en un clic.",
                                 "Je m'occupais de la partie de génération des documents pdf. J'ai utilisé la bibliothèque iText pour écrire dans un pdf."
                             ],
-                            img: null,
+                            img: LinEpicerie,
                             template: null,
-                            imgStyle: "",
+                            imgStyle: "width: 20em;margin: 0 5em;",
                             style: "width: 30em"
                         },
                         {
@@ -194,6 +197,43 @@ export default {
                                 
                             ],
                             img: ArkanoidImg,
+                            template: null,
+                            imgStyle: "",
+                            style: "width: 30em"
+                        },
+                        {
+                            id: 3,
+                            label: "Développemment d'une plateforme web en Laravel",
+                            otherText: [
+                                "Les universités de bretagne sud (UBS) avaient besoins d'une plateforme pour répertorier et afficher les statistiques de leurs universités (taux de réussite, âge moyen, moyennes...)",
+                                "Les besoins portaient sur la création d'une base de données, le développement d'un back office, affichage de graphiques et possibilités de gérer les utilisateurs et leurs droits."
+                            ],
+                            img: null,
+                            template: null,
+                            imgStyle: "",
+                            style: "width: 30em"
+                        },
+                        {
+                            id: 4,
+                            label: "Développement d'un jeu du jeu de société Arcanor en Java et javax.swing",
+                            otherText: [
+                                "Le jeu à été développé en équipe de 2 développeurs et nous étions en compétitions. Afin de nous démarquer des autres joueurs nous nous sommes inspirés d'un design de jeu d'arcade (car très simples et avec de nombreuses images existantes sur internet).",
+                                "Nous avons utilisés une méthode agile, réalisés des cahiers des charges et comptes rendus.",
+                                "Dans ce jeu de stratégie à deux, le but est de déplacer ses pièces pour les apporter sur la ligne adverse. A son tour, le joueur choisit entre déplacer l'une de ses pièces, libérer une de ses pièces cachée sous une autre, manger une pièce adverse.  Quand une pièce arrive sur la ligne adverse, elle y reste et est invulnérable. Plus la pièce est petite, plus elle rapporte de point (4 tailles, de 1 à 4 points). Le but étant d'avoir 12 points de pièces arrivées. "
+                            ],
+                            img: ArcanorImg,
+                            template: null,
+                            imgStyle: "",
+                            style: "width: 30em"
+                        },
+                        {
+                            id: 5,
+                            label: "Développement d'un site vitrine avec Wordpress pour l'association la clique du clic",
+                            otherText: [
+                                "Afin de réaliser un premier projet, nous avons réalisé un site internet en équipe de 2 pour le une association de théâtre d'improvisation.",
+                                "Les objectifs étaient d'apprendre à réaliser un cahier des charges, d'organiser des réunions avec un client, apprendre la méthode agile."
+                            ],
+                            img: CdCImg,
                             template: null,
                             imgStyle: "",
                             style: "width: 30em"
